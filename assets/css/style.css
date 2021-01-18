@@ -1,0 +1,12 @@
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+}
