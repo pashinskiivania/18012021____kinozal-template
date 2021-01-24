@@ -1,3 +1,83 @@
-.navbar-inverse .navbar-nav > .active >a {
-    background-color: #053159;
+.navbar-inverse {
+  margin-bottom: 0;
+
+  background-color: darken($color-dark, 4%);
+
+  .navbar-nav {
+    > .active > a {
+      background-color: $color-primary-dark;
+
+      &:hover,
+      &:focus {
+        background-color: $color-primary-light;
+      }
+    }
+
+    > li > a {
+      transition: background-color 0.5s;
+
+      @include sm-min {
+        border-radius: 4px;
+      }
+      @include sm {
+        text-align: center;
+      }
+      &:hover,
+      &:focus {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+.navbar-left {
+  @include sm-min {
+    > li {
+      padding: 5px 5px 5px 0;
+    }
+  }
+  @include sm {
+    margin-bottom: 0;
+  }
+}
+
+.navbar-right {
+  @include sm-min {
+    > li {
+      padding: 5px 0 5px 5px;
+    }
+  }
+  @include sm {
+    margin-top: 0;
+  }
+}
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
+
+  margin-right: 0;
+}
+.panel {
+  margin-bottom: 30px;
+
+  background-color: darken(#ffffff, 7%);
+  &-info {
+    border: none;
+
+    > .panel-heading {
+      letter-spacing: 0.1em;
+
+      color: $color-light;
+      border: none;
+      background-color: $color-accent;
+
+      font-size: 1.2rem;
+    }
+  }
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
 }
