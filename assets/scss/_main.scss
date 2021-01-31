@@ -9,3 +9,25 @@
     margin-bottom: $gap * 4;
   }
 }
+
+.new-films {
+&-row {
+  margin-left: -($gap / 2);
+  margin-right: -($gap / 2);
+  margin-bottom: -$gap;
+
+}
+
+
+&-item {
+  padding-left: $gap / 2;
+  padding-right: $gap / 2;
+  margin-bottom: $gap;
+
+  &__thumbnail {
+    margin-bottom: 0;
+  }
+}
+
+
+}
